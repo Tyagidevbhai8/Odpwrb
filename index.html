@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="css/css-bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/js-jquery-ui-1.10.0.custom.min.css">
+<link rel="stylesheet" type="text/css" href="css/css-style.css">
+<link rel="stylesheet" type="text/css" href="css/css-font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/css-font-awesome.min.css">
+<script type="text/javascript" src="js/js-jquery.min.js"></script>
+<script type="text/javascript" src="js/js-jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="js/css-bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/js-jquery-ui-1.10.0.custom.min.js"></script>
+<script type="text/javascript" src="js/noty-jquery.noty.js"></script>
+<script type="text/javascript" src="js/layouts-center.js"></script>
+<script type="text/javascript" src="js/layouts-bottomRight.js"></script>
+<script type="text/javascript" src="js/themes-default.js"></script>
+<script type="text/javascript" src="js/js-core.js"></script>
+<script type="text/javascript" src="js/js-bootstrap-datepicker.js"></script>
+<title>VClub | Topup</title>
+<link rel="icon" type="image/x-icon" href="/usercp/auth/images/logo.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+</head>
+<body class="h-scroll">
+<style>.h-scroll::-webkit-scrollbar{display:none}.h-scroll{-ms-overflow-style:none;scrollbar-width:none}.ERC20{color:red;font-size:20px;margin-left:15px}@media only screen and (max-width:1200px){.ERC20{display:block;margin-left:5px;margin-top:5px}}@media only screen and (max-width:767px){.pull-right{margin-right:25%}}</style>
+<style>.alpha60{z-index:1000;background:#45484d;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ1NDg0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-moz-linear-gradient(top,#45484d 0,#000 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#45484d),color-stop(100%,#000));background:-webkit-linear-gradient(top,#45484d 0,#000 100%);background:-o-linear-gradient(top,#45484d 0,#000 100%);background:-ms-linear-gradient(top,#45484d 0,#000 100%);background:linear-gradient(to bottom,#45484d 0,#000 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);bottom:0;position:fixed;width:100%;padding-left:3%;padding-top:3px;padding-bottom:4px}.modal-supp{margin:100px auto 50px auto;width:1000px;padding:40px 40px 60px 40px;color:#ddd;background-color:#1e1f21;box-shadow:0 0 25px #fff;border-radius:10px}.support-button{position:fixed;left:0;top:50%;width:23px;height:88px;max-width:40px;margin-top:-108px;cursor:pointer;background:url(/usercp/auth/images/support.png) top left no-repeat}.modal-inv{margin:100px auto 50px auto;width:1000px;padding:40px 40px 60px 40px;color:#FFF;box-shadow:0 0 25px #fff;border-radius:10px}.invite-button{position:fixed;left:0;top:50%;width:23px;height:88px;max-width:40px;margin-top:-1px;cursor:pointer;background:url(/usercp/auth/images/invite.png) top left no-repeat}</style>
+<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive_top" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navbarResponsive_top">
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a href="#" class="nav-link" style>News</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link" style>Preorder</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link" style>NoVBV Bins <span class="badge badge-pill badge-danger">new</span></a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">CCS <span class="caret"></span></a>
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#" style>Buy CCS</a></li>
+
+<li><a class="dropdown-item" href="#" style>Cart CCS </a></li>
+
+<li><a class="dropdown-item" href="#" style>Orders CCS</a></li>
+
+<li><a class="dropdown-item" href="#" style>Binlookup</a></li>
+
+<li><a class="dropdown-item" href="#" style>Bin Preorder</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="/#" class="nav-link" style>Refund policy</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Socks 5 <span class="caret"></span></a>
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#" style>Buy Socks 5</a></li>
+
+<li><a class="dropdown-item" href="#" style>Orders Socks 5</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Billing <span class="caret"></span></a>
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#" style>Topup</a></li>
+
+<li><a class="dropdown-item" href="#" style>History</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Support <span class="caret"></span></a>
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#" style>My tickets </a></li>
+
+<li><a class="dropdown-item" href="#" style>Create ticket</a></li>
+</ul>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style>Profile <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#" style>Settings</a></li>
+<li><a class="dropdown-item" href="index.html" style>Logout</a></li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+<div class="alpha60">
+<div class="container">
+<div>
+<div class="label label-default" style="display:block;float:left;margin-left:5px;color:#B8B8B8;border:2px #262626 solid"><a href="#"><span style="font-size:18px;text-decoration:underline"><strong style="color:red">SELLER?</strong> <strong style="font-weight:700;color:#6F3">SELL YOUR STUFF WITH US</strong></span></a></div>
+</div>
+<div class="checker-info">Balance: <strong style="font-size:14px;color:#32CD32">LOCKED</strong></div>
+</div>
+</div>
+<style>.modal-text{margin:100px auto 50px auto;width:1000px;padding:40px 40px 60px 40px;color:#ddd;background-color:#1e1f21;box-shadow:0 0 25px #fff;border-radius:10px}.modal-text h4{font-weight:700;margin:25px 0 10px 0;display:block}.modal-text .nav-tabs{width:100%;margin:0;display:block;height:28px;padding:0}.modal-text .nav-tabs a{padding:3px 15px;width:100%;display:block;text-decoration:none;text-align:center;border-radius:7px 7px 0 0}.modal-text .nav-tabs li.active a{background:#3e374e}.modal-text .nav{width:50%}.modal-text .tab-content{border-top:1px solid #3e374e;padding-top:10px}</style>
+<script>eval(function(e,t,n,r,o,i){if(o=function(e){return e.toString(36)},!"".replace(/^/,String)){for(;n--;)i[n.toString(t)]=r[n]||n.toString(t);r=[function(e){return i[e]}],o=function(){return"\\w+"},n=1}for(;n--;)r[n]&&(e=e.replace(new RegExp("\\b"+o(n)+"\\b","g"),r[n]));return e}("$(8).a(1(){$('.4-3').5({6:9});b($.2('0')==7){$.2('0','j',{h:i/c,f:'/'});d(1(){$('.4-3').5({6:e})},g)}});",20,20,"Rules|function|cookie|popup|form|modal|show|null|document|false|ready|if|1440|setTimeout|true|path|500|expires|30|yes".split("|"),0,{}));</script>
+<div class="modal fade form-popup show h-scroll" data-backdrop="true" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" style="padding-right:17px;display:none" aria-modal="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item"><a class="nav-link active" href="#en" data-toggle="tab" id="en-tab" aria-controls="en">English</a></li>
+<li class="nav-item"><a class="nav-link" href="#ru" data-toggle="tab" id="ru-tab" aria-controls="ru">Russian</a></li>
+</ul>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body">
+<div class="tab-content">
+<div class="tab-pane active" style="overflow:hidden" id="en" role="tabpanel" aria-labelledby="en-tab">
+<h2 style="text-align:center"><strong><span style="color:green">RULES</span>&nbsp;</strong></h2>
+<h3 style="text-align:left"><strong>Refund:</strong></h3>
+<p><strong>1.&nbsp;System&nbsp;cannot&nbsp;guarantee&nbsp;any&nbsp;balance&nbsp;on&nbsp;cards&nbsp;you&nbsp;purchase.&nbsp;and&nbsp;we&nbsp;cannot&nbsp;refund&nbsp;or&nbsp;replace&nbsp;card&nbsp;for&nbsp;this&nbsp;reason&nbsp;</strong><br><strong>2.&nbsp;If&nbsp;card&nbsp;not&nbsp;verified&nbsp;by&nbsp;visa&nbsp;or&nbsp;security&nbsp;3d&nbsp;MC&nbsp;protect&nbsp;,&nbsp;we&nbsp;cannot&nbsp;not&nbsp;replace&nbsp;or&nbsp;refund.&nbsp;</strong><br><strong>3.&nbsp;No&nbsp;refund&nbsp;or&nbsp;replace&nbsp;for&nbsp;invalid&nbsp;address,&nbsp;state,&nbsp;city,zip,&nbsp;phone,&nbsp;dob,&nbsp;ssn,&nbsp;mmn,&nbsp;name&nbsp;and&nbsp;etc...&nbsp;</strong><br><strong>4.&nbsp;System&nbsp;can`t&nbsp;refund&nbsp;or&nbsp;replace&nbsp;if&nbsp;our&nbsp;checker&nbsp;say&nbsp;card&nbsp;is&nbsp;approval.</strong><br><strong>5.&nbsp;Refund&nbsp;time&nbsp;is 5-10 min after buy.<br>6. No refund for GOLD bases. GOLD color means base has no refunds at all.<br></strong></p>
+<h3 style="text-align:left"><strong>Payment:</strong></h3>
+<p><strong>1.&nbsp;All&nbsp;payments&nbsp;can&nbsp;be&nbsp;made&nbsp;only&nbsp;via&nbsp;bitcoin&nbsp;and&nbsp;"NO&nbsp;REFUND"&nbsp;after&nbsp;the&nbsp;payment&nbsp;is&nbsp;loaded&nbsp;successfully&nbsp;to&nbsp;your&nbsp;account.&nbsp;</strong><br><strong>2.&nbsp;After&nbsp;send&nbsp;payment&nbsp;via&nbsp;bitcoin,&nbsp;your&nbsp;balance&nbsp;will&nbsp;be&nbsp;automatically&nbsp;loaded&nbsp;after&nbsp;2&nbsp;confirmed&nbsp;in&nbsp;bitcoin&nbsp;system.&nbsp;</strong><br><strong>3.&nbsp;Bitcoin&nbsp;confirm&nbsp;could&nbsp;take&nbsp;from&nbsp;5&nbsp;minutes&nbsp;to&nbsp;2&nbsp;hours.&nbsp;We&nbsp;have&nbsp;no&nbsp;control&nbsp;over&nbsp;bitcoin&nbsp;system&nbsp;,&nbsp;so&nbsp;you&nbsp;need&nbsp;to&nbsp;wait&nbsp;</strong></p>
+<h3 style="text-align:left"><strong>Privacy:</strong></h3>
+<p><strong>1.&nbsp;System&nbsp;don`t&nbsp;save&nbsp;any&nbsp;log&nbsp;of&nbsp;your&nbsp;connection.&nbsp;</strong><br><strong>2.&nbsp;System&nbsp;encrypted&nbsp;you&nbsp;information&nbsp;data,&nbsp;but&nbsp;you&nbsp;don`t&nbsp;put&nbsp;sensitive&nbsp;data&nbsp;in&nbsp;site.&nbsp;</strong></p>
+<h3 style="text-align:left"><strong>Other:</strong></h3>
+<p><strong>1.&nbsp;All&nbsp;payments&nbsp;can&nbsp;be&nbsp;made&nbsp;only&nbsp;via&nbsp;Bitcoin&nbsp;and&nbsp;NO&nbsp;REFUNDS&nbsp;after&nbsp;the&nbsp;payment&nbsp;is&nbsp;loaded&nbsp;successfully&nbsp;to&nbsp;your&nbsp;account.&nbsp;</strong><br><strong>1.&nbsp;Valid&nbsp;rate&nbsp;of&nbsp;all&nbsp;our&nbsp;bases&nbsp;differs&nbsp;from&nbsp;%50&nbsp;to&nbsp;%100.&nbsp;</strong><br><strong>2.&nbsp;We&nbsp;answer&nbsp;your&nbsp;problems&nbsp;only&nbsp;in&nbsp;ticket&nbsp;system.</strong></p>
+<h3><strong>Reseller:</strong></h3>
+<p><strong>1. Valid rate more than 75%.</strong></p>
+<p><strong>2. AutoPay out system, you don't need ask support for you money.&nbsp;</strong></p>
+<p><strong>3. Fast sales!<br></strong></p>
+<h2 style="text-align:center"><strong><span style="color:red">[*] To upload you base please contact support JID:</span><br><span style="color:#0f0">support is in maintenance</span><br></strong></h2>
+</div>
+<div class="tab-pane fade" id="ru" role="tabpanel" aria-labelledby="ru-tab">
+<h2 style="text-align:center;color:green">&nbsp;&#1055;&#1056;&#1040;&#1042;&#1048;&#1051;&#1040;</h2>
+<h3>&#1042;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;<strong style="font-size:11px">:</strong></h3>
+<p><strong>1. &#1052;&#1099; &#1085;&#1077; &#1075;&#1072;&#1088;&#1072;&#1085;&#1090;&#1080;&#1088;&#1091;&#1077;&#1084; &#1073;&#1072;&#1083;&#1072;&#1085;&#1089; &#1085;&#1072; &#1082;&#1072;&#1088;&#1090;&#1072;&#1093;.&nbsp;</strong><br><strong>2. &#1045;&#1089;&#1083;&#1080; &#1082;&#1072;&#1088;&#1090;&#1072; &#1085;&#1077; &#1080;&#1084;&#1077;&#1077;&#1090; 3D Secure &#1080;&#1083;&#1080; MasterCard Secure &#1090;&#1086; &#1084;&#1099; &#1085;&#1077; &#1076;&#1077;&#1083;&#1072;&#1077;&#1084; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;.</strong><br><strong>3. &#1053;&#1077; &#1076;&#1077;&#1083;&#1072;&#1077;&#1084; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090; &#1077;&#1089;&#1083;&#1080; address,&nbsp;state,&nbsp;city,zip,&nbsp;phone,&nbsp;dob,&nbsp;ssn,&nbsp;mmn,&nbsp;name &#1085;&#1077; &#1087;&#1088;&#1072;&#1074;&#1080;&#1083;&#1100;&#1085;&#1099;&#1077;.&nbsp;</strong><br><strong>4.&nbsp;&#1045;&#1089;&#1083;&#1080; &#1085;&#1072;&#1096; &#1095;&#1077;&#1082;&#1077;&#1088; &#1087;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1072;&#1077;&#1090; &#1095;&#1090;&#1086; &#1082;&#1072;&#1088;&#1090;&#1072; &#1074;&#1072;&#1083;&#1080;&#1076;&#1085;&#1072;&#1103; &#1084;&#1099; &#1085;&#1077; &#1076;&#1077;&#1083;&#1072;&#1077;&#1084; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;.&nbsp;</strong><br><strong>5. &#1055;&#1088;&#1080;&#1084;&#1077;&#1088;&#1085;&#1086;&#1077; &#1074;&#1088;&#1077;&#1084;&#1103; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1072; &#1076;&#1086; 5 &#1084;&#1080;&#1085;&#1091;&#1090; &#1087;&#1086;&#1089;&#1083;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1080;&#1080;, &#1083;&#1080;&#1073;&#1086; &#1072;&#1074;&#1090;&#1086;&#1084;&#1072;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;.<br>6. &#1056;&#1077;&#1092;&#1072;&#1085;&#1076; &#1082;&#1072;&#1088;&#1090; &#1080;&#1079; &#1073;&#1072;&#1079; &#1087;&#1086;&#1084;&#1077;&#1095;&#1077;&#1085;&#1085;&#1099;&#1093; &#1079;&#1086;&#1083;&#1086;&#1090;&#1099;&#1084; &#1094;&#1074;&#1077;&#1090;&#1086;&#1084; &#1085;&#1077;&#1074;&#1086;&#1079;&#1084;&#1086;&#1078;&#1077;&#1085;. &#1045;&#1089;&#1083;&#1080; &#1073;&#1072;&#1079;&#1072; &#1079;&#1086;&#1083;&#1086;&#1090;&#1072;&#1103;, &#1101;&#1090;&#1086; &#1079;&#1085;&#1072;&#1095;&#1080;&#1090; &#1084;&#1099; &#1085;&#1077; &#1076;&#1077;&#1083;&#1072;&#1077;&#1084; &#1088;&#1077;&#1092;&#1072;&#1085;&#1076; &#1077;&#1105; &#1082;&#1072;&#1088;&#1090; &#1085;&#1077; &#1087;&#1088;&#1080;&#1082;&#1072;&#1082;&#1080;&#1093; &#1091;&#1089;&#1083;&#1086;&#1074;&#1080;&#1103;&#1093;.<br></strong></p>
+<h3><strong>&#1055;&#1083;&#1072;&#1090;&#1077;&#1078;&#1080;:</strong></h3>
+<p><strong>1. &#1042;&#1089;&#1077; &#1087;&#1083;&#1072;&#1090;&#1077;&#1078;&#1080; &#1085;&#1077;&#1086;&#1073;&#1088;&#1072;&#1090;&#1080;&#1084;&#1099;.&nbsp;</strong><br><strong>2. &#1055;&#1083;&#1072;&#1090;&#1077;&#1078;&#1080; &#1079;&#1072;&#1095;&#1077;&#1089;&#1083;&#1103;&#1102;&#1090;&#1089;&#1103; &#1087;&#1086;&#1089;&#1083;&#1077; &#1076;&#1074;&#1091;&#1093; &#1087;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1081; Bitcoin.&nbsp;</strong><br><strong>3.&nbsp;&#1052;&#1099; &#1085;&#1077; &#1082;&#1086;&#1085;&#1090;&#1088;&#1086;&#1083;&#1080;&#1088;&#1091;&#1077;&#1084; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1091; Bitcoin, &#1086;&#1073;&#1099;&#1095;&#1085;&#1086; &#1087;&#1083;&#1072;&#1090;&#1077;&#1078; &#1079;&#1072;&#1085;&#1080;&#1084;&#1072;&#1077;&#1090; &#1085;&#1077; &#1084;&#1077;&#1085;&#1077;&#1077; 30 &#1084;&#1080;&#1085;&#1091;&#1090;.&nbsp;</strong></p>
+<h3><strong>&#1040;&#1085;&#1086;&#1085;&#1080;&#1084;&#1085;&#1086;&#1089;&#1090;&#1100;:</strong></h3>
+<p><strong>1.&nbsp;&#1052;&#1099; &#1085;&#1077; &#1093;&#1088;&#1072;&#1085;&#1080;&#1084; &#1074;&#1072;&#1096;&#1080; &#1083;&#1086;&#1075;&#1080;.&nbsp;</strong><br><strong>2.&nbsp;&#1042;&#1089;&#1077; &#1074;&#1072;&#1096;&#1080; &#1076;&#1072;&#1085;&#1085;&#1099;&#1077; Jabber, Email &#1087;&#1086;&#1082;&#1091;&#1087;&#1082;&#1080; &#1080; &#1087;&#1088;&#1086;&#1095;&#1077;&#1077; &#1079;&#1072;&#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1085;&#1099;.&nbsp;</strong></p>
+<h3><strong>&#1055;&#1088;&#1086;&#1095;&#1077;&#1077;:</strong></h3>
+<p><strong>1.&nbsp;&#1042;&#1089;&#1077; &#1087;&#1083;&#1072;&#1090;&#1077;&#1078;&#1080; &#1087;&#1088;&#1086;&#1093;&#1086;&#1076;&#1103;&#1090; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1095;&#1077;&#1088;&#1077;&#1079; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1091; Bitcoin &#1080; &#1085;&#1077; &#1080;&#1084;&#1077;&#1102; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1072;.&nbsp;</strong><br><strong>2. &#1042;&#1072;&#1083;&#1080;&#1076; &#1085;&#1072;&#1096;&#1080;&#1093; &#1073;&#1072;&#1079; &#1086;&#1090; 50% &#1076;&#1086; 100%.&nbsp;</strong><br><strong>3.&nbsp;&#1042;&#1089;&#1077; &#1074;&#1072;&#1096;&#1080; &#1087;&#1088;&#1086;&#1073;&#1083;&#1077;&#1084;&#1099; &#1084;&#1099; &#1088;&#1077;&#1096;&#1072;&#1077;&#1084; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1074; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1077; &#1090;&#1080;&#1082;&#1077;&#1090;&#1086;&#1074;.</strong></p>
+<h3><strong>&#1055;&#1088;&#1086;&#1076;&#1072;&#1074;&#1077;&#1094;:</strong></h3>
+<p><strong>1. &#1042;&#1072;&#1083;&#1080;&#1076; &#1073;&#1072;&#1079;&#1099; &#1076;&#1086;&#1083;&#1078;&#1077;&#1085; &#1073;&#1099;&#1090;&#1100; &#1073;&#1086;&#1083;&#1100;&#1096;&#1077; 75%.</strong></p>
+<div class="tab-pane fade active in"><strong>2. &#1057;&#1080;&#1089;&#1090;&#1077;&#1084;&#1072; &#1072;&#1074;&#1090;&#1086; &#1074;&#1099;&#1074;&#1086;&#1076;&#1072; &#1088;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090; &#1074;&#1089;&#1077;&#1075;&#1076;&#1072;, &#1074;&#1072;&#1084; &#1085;&#1077; &#1085;&#1091;&#1078;&#1085;&#1086; &#1086;&#1073;&#1088;&#1072;&#1097;&#1072;&#1090;&#1100;&#1089;&#1103; &#1082; &#1085;&#1072;&#1084; &#1079;&#1072; &#1074;&#1099;&#1074;&#1086;&#1076;&#1086;&#1084; &#1074;&#1072;&#1096;&#1080;&#1093; &#1089;&#1088;&#1077;&#1076;</strong><strong><strong>&#1089;</strong>&#1090;&#1074;.</strong></div>
+<div>
+<h2 style="text-align:center"><strong><span style="color:red">[*] &#1045;&#1089;&#1083;&#1080; &#1093;&#1086;&#1090;&#1080;&#1090;&#1077; &#1079;&#1072;&#1075;&#1088;&#1091;&#1079;&#1080;&#1090;&#1100; &#1073;&#1072;&#1079;&#1091; &#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1074; JID:</span><br><span style="color:#0f0">&#1087;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1082;&#1072; &#1085;&#1072;&#1093;&#1086;&#1076;&#1080;&#1090;&#1089;&#1103; &#1085;&#1072; &#1086;&#1073;&#1089;&#1083;&#1091;&#1078;&#1080;&#1074;&#1072;&#1085;&#1080;&#1080;</span></strong></h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">eval(unescape("%66%75%6e%63%74%69%6f%6e%20%69%63%39%39%36%36%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%31%36%32%31%36%39%30%35%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%37%31%35%37%30%36%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%32%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a")),eval(unescape("%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%69%63%39%39%36%36%28%27")+"%3c%66%62%77%1c%66%6f%58%70%74%3c%20%77%75%6a%6b%6e%72%75%2e%67%72%77%75%6d%6a%26%38%3f%2e%60%60%71%3b%0a%0d%3d%62%61%72%1a%64%69%5d%76%74%3c%21%6e%6a%62%59%6c%1a%61%5c%60%64%1b%63%6c%75%6c%2b%68%6b%6a%76%6d%53%27%1b%75%5e%65%60%6c%64%65%72%3e%23%29%28%25%19%71%68%6d%63%3d%26%66%62%5c%68%6a%60%27%1f%5a%77%67%59%2d%6e%5a%63%61%6d%6f%64%63%65%70%3b%26%6d%73%4f%5c%72%62%66%4c%6c%67%58%6a%4c%59%64%66%69%29%28%25%19%5e%75%60%5f%2d%60%63%67%61%61%6b%3e%27%73%75%74%63%26%3a%0f%0d%1d%1c%19%1b%3d%63%62%73%1e%67%6c%5b%74%72%39%27%6e%6a%63%5a%6d%2b%77%75%6a%6b%23%3e%0c%0d%19%1f%1b%19%1e%18%18%1a%3f%6d%3e%3d%74%75%71%68%6b%65%3a%41%60%1b%74%6f%74%1b%61%5e%71%64%1e%59%6a%73%1b%6d%72%6a%65%6d%62%6e%19%6e%6c%65%5b%74%60%1c%58%67%65%1f%76%76%1e%6b%6a%28%3f%2e%73%75%75%6a%6d%60%3b%3a%2b%68%38%0e%0b%1c%19%1b%19%1f%1b%19%1e%3c%68%38%3f%72%70%77%68%6b%64%39%3d%71%68%59%68%1b%72%70%70%6f%64%3a%25%66%6d%6c%6b%74%3d%1d%23%63%61%29%2f%2b%29%39%26%3a%4c%3a%43%42%44%55%28%3b%28%76%6e%59%6a%38%3d%1d%45%6b%1b%4c%5e%62%6b%72%65%6a%5b%69%62%61%3d%5a%19%67%75%64%64%3d%26%24%39%39%62%77%39%3d%2c%5a%3b%3a%2b%77%76%75%6e%6e%62%39%3d%2c%6b%3b%0b%0e%18%1a%1b%1d%1c%19%1b%19%3b%6b%3b%3a%77%74%74%68%6f%67%3b%3f%76%6f%5a%6b%1e%77%74%73%6f%60%39%27%64%6a%6b%68%77%38%18%27%60%61%2d%2c%29%2b%3e%21%39%4f%3f%46%46%47%55%33%3a%3d%28%76%6f%5a%6b%3c%41%6a%1a%4e%5c%65%6b%77%64%6d%5a%6b%61%65%3c%29%74%71%72%6a%69%62%3d%3f%2a%6e%3a%0d%0c%1b%1d%1c%19%3f%2a%63%62%73%3c%0d%0e%3e%28%61%65%73%3916216905%36%34%35%33%32%37%35"+unescape("%27%29%29%3b"));</script>
+<noscript><i>Javascript required</i></noscript>
+<script>eval(function(e,b,a,d,c,f){if(c=function(e){return e.toString(36)},!"".replace(/^/,String)){for(;a--;)f[a.toString(b)]=d[a]||a.toString(b);d=[function(e){return f[e]}],c=function(){return"\\w+"},a=1}for(;a--;)d[a]&&(e=e.replace(new RegExp("\\b"+c(a)+"\\b","g"),d[a]));return e}("$(4).3(0(){$('.2-1').5(0(){$('.9-8').7({a:6,})})});",11,11,"function|button|support|ready|document|click|true|modal|popupS|form|show".split("|"),0,{}));</script><script type="text/javascript">eval(unescape("%66%75%6e%63%74%69%6f%6e%20%6c%30%66%31%34%39%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%37%33%34%37%34%39%35%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%37%35%34%30%34%30%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%38%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a")),eval(unescape("%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%6c%30%66%31%34%39%28%27")+"%31%54%61%6b%18%58%67%5e%6e%6f%35%1e%61%63%66%61%69%5d%26%59%6a%69%68%67%62%1a%33%3c%27%59%61%6d%35%02%07%30%5c%65%6e%1d%53%64%5c%6b%68%36%1d%60%63%5c%5d%64%1d%56%59%59%5d%1b%5d%60%6f%61%25%6c%67%6d%65%68%44%1a%1b%6f%5e%5f%65%66%58%5d%75%3d%1a%20%29%19%1b%6d%62%60%5d%31%1a%59%69%59%61%67%5c%19%1f%5c%6e%61%5d%25%61%51%5a%58%64%67%5e%5b%5f%75%35%1e%65%74%4c%59%6f%5f%5e%46%60%59%5d%64%40%59%5f%55%64%20%29%19%1b%5e%6f%65%59%21%60%64%54%5c%58%66%36%19%6b%6f%69%5d%1e%36%00%0a%18%1d%18%1b%37%5b%64%6a%18%5f%64%5c%63%6b%30%1a%66%64%5b%5c%60%25%65%66%6b%10%59%61%5d%69%6f%1f%5c%60%5d%6e%6c%20%63%6d%5e%5b%5e%68%6c%1f%32%05%06%18%1d%10%18%1d%18%1b%1b%4f%61%59%59%6f%5d%1d%6e%67%69%5d%27%1b%68%58%1c%6d%6f%5d%1d%69%66%6b%61%6f%5a%6b%64%63%66%1c%5b%62%54%5d%1d%6b%72%68%6b%58%61%18%58%6d%6f%69%66%5a%18%6f%63%5a%1d%6e%5d%5b%61%6e%64%6a%5c%6c%62%64%61%23%1c%51%63%6d%1d%53%59%63%18%68%63%5e%6f%59%18%75%67%68%62%18%68%66%62%6a%6a%58%1c%61%62%6e%64%64%59%69%61%64%65%1f%5e%63%5c%59%18%69%6f%18%64%66%6d%62%6b%58%1c%71%63%6d%6f%10%5e%6f%61%5e%65%5b%6e%22%34%5e%6a%33%0d%02%1d%18%1b%1b%1f%1d%1c%18%30%60%2f%3e%5c%5e%2a%33%29%2c%2e%5e%5c%2a%2f%34%23%2a%5f%2f%2a%2b%37%2d%2a%2e%2c%2c%2c%56%5a%5e%2b%2d%2d%5b%31%23%60%2e%36%1d%40%64%58%59%68%5e%1f%6f%59%65%59%65%5f%55%6a%1d%6d%1b%58%5e%63%1c%67%62%64%74%10%6d%6e%5d%1b%62%6b%1d%30%6b%68%6a%62%6e%5f%33%2a%1b%6f%66%60%59%6b%30%27%6e%64%6a%62%66%5c%35%21%1d%48%60%59%66%1d%69%6c%1d%6f%64%6e%63%59%1c%5a%59%18%6f%55%68%61%59%58%5e%5b%1d%6b%61%68%60%1d%51%18%63%5d%6c%1b%60%63%59%26%01%02%1d%10%18%1d%34%24%5f%66%6b%32%05%06%34%22%54%61%6b%367347495%35%38%30%35%30%33%33"+unescape("%27%29%29%3b"));</script>
+<noscript><i>Javascript required</i></noscript>
+<script>eval(function(e,b,d,a,c,f){if(c=function(e){return e.toString(36)},!"".replace(/^/,String)){for(;d--;)f[d.toString(b)]=a[d]||d.toString(b);a=[function(e){return f[e]}],c=function(){return"\\w+"},d=1}for(;d--;)a[d]&&(e=e.replace(new RegExp("\\b"+c(d)+"\\b","g"),a[d]));return e}("$(5).4(1(){$('.0-3, .0-6').7(1(){$('.9-8').b({2:a,})})});",12,12,"invite|function|show|button|ready|document|href|click|popupI|form|true|modal".split("|"),0,{}));</script>
+<div class="container">
+<div class="row">
+<div style="height:75px;display:block;text-align:center"></div>
+</div>
+<div class="well" style="background-image:url(data:image/png;base64,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);background-position:15px 15px;background-repeat:no-repeat;border:2px solid #eb5339;background-color:#f5b5a9;padding-left:55px;font-weight:700;font-size:24px;color:red" id="scriptMessageId">Our site needs javascript to be enabled! Please enable it in your browser!</div>
+<script>$("#scriptMessageId").hide(),$("#messageId").show();</script>
+<div></div>
+<script type="text/javascript">eval(unescape("%66%75%6e%63%74%69%6f%6e%20%73%61%63%65%62%65%63%64%66%66%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%32%32%31%31%34%37%36%39%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%37%31%39%31%36%36%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%2d%31%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a")),eval(unescape("%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%73%61%63%65%62%65%63%64%66%66%28%27")+"%3b%68%34%37%42%6c%67%77%77%66%74%27%43%60%63%63%7d%6a%7f%61%72%67%6c%3c%36%6f%35%3e%09%03%21%29%22%26%3c%6c%6b%71%27%62%6c%65%7c%74%36%20%65%6c%6f%72%73%27%64%6c%61%7b%75%26%66%65%6e%61%67%75%25%39%0f%0c%29%21%29%22%3a%68%3f%3e%41%76%75%20%73%78%6e%6e%22%71%6e%7f%75%70%64%6b%20%65%6c%75%62%74%6d%74%73%2c%27%5e%60%20%6e%6a%77%6e%22%6a%71%6d%6d%60%63%27%7b%77%7e%73%29%61%63%65%79%77%69%73%2b%20%40%78%73%29%74%61%72%63%66%6c%7c%6c%6e%6f%29%7a%78%75%74%20%63%64%60%69%73%6b%72%72%2d%29%59%77%77%28%68%64%71%60%20%72%78%21%6d%65%76%71%7d%6b%73%27%3c%30%22%29%75%78%22%7d%71%7f%72%27%64%62%65%77%7e%6f%7d%2e%26%43%6e%74%60%75%27%76%61%7b%6a%6f%69%63%63%7c%6b%76%69%27%7b%77%7e%73%29%61%63%65%79%77%69%73%27%79%6d%65%6d%29%60%61%20%7f%6e%6b%76%62%6d%61%6d%21%6a%6c%62%20%73%71%70%27%7e%6b%6a%65%21%6b%65%26%63%6a%6c%60%27%73%71%26%7e%74%6e%22%62%67%78%71%72%6c%73%67%62%29%62%66%73%71%6e%7c%2e%27%53%6f%63%68%64%21%52%73%71%2e%34%31%6f%30%39%0f%0c%29%21%29%22%3a%31%6c%6b%71%3922114769%36%31%37%38%30%38%33"+unescape("%27%29%29%3b"));</script>
+<noscript><i>Javascript required</i></noscript>
+<table class="detail-view table table-striped table-condensed" id="yw2">
+<tbody>
+<tr class="odd">
+<th>Username</th>
+<td></td>
+</tr>
+<tr class="even">
+<th>Balance</th>
+<td>LOCKED</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div id="yw5" class="tabbable tabs-above">
+<ul class="nav nav-tabs" role="menu">
+<li class="nav-item"><a data-toggle="tab" class="active nav-link" tabindex="-1" role="tab" href="#bitcoin"><img src="/storage/emulated/0/Download/images-bitcoin.svg" alt style="width:16px"> BITCOIN</a></li>
+<li class="nav-item"><a data-toggle="tab" tabindex="-1" role="tab" class="nav-link" href="#monero"><img src="/storage/emulated/0/Download/images-lite.svg" alt style="width:16px"> LITECOIN</a></li>
+</ul>
+<div class="tab-content">
+<div id="bitcoin" class="tab-pane fade active in show">
+<div class="card">
+<div class="card-body">
+<h4>Please send your payment of BTC to Bitcoin address:</h4>
+<b><span style="color:gren;font-size:20px">Notice: Every time, when you want to Topup, please, check address on this page. It will be changed every time after each transaction.</span></b><br><br><b>Exchange fee is 3%. You need to 2 confirmations of transaction in the system to deposit money to your account.</b><br><br>
+<div class="alert alert-success">
+<h4><strong>bc1q8zwujyyaj5f48m7p5kj855603smr56us6245a2</strong></h4>
+</div>
+<div class="row">
+<div class="col-md-9" style="color:#fff">
+Payments from Bitcoin's takes about 10-15 mins, please contact with support if you don't receive your funds only after 15 mins.<br><br>To fill up your shop balance with BTC payment you need to:<br><br>1- Send coins to your address shown above (you can send as many separate payments as you want - they all will be added to your balance)<br>2- After your transaction(s) get 2 confirmations - your balance will be added to your account automatically.<br><br>
+</div>
+<div class="col-md-3">
+<div class="pull-right" id="qr-bitcoin" style="width:200px;height:200px;border:1px solid #CCC;position:relative"><img id="qr-code-bitcoin" style="width:100%" src="/storage/emulated/0/Download/btcc.png " alt> </div>
+</div>
+</div>
+<div class="alert">
+Transactions waiting confirmation:<br>
+<div id="Transactions" class="grid-view">
+<div>
+<div class="table-responsive">
+<table class="items table table-striped table-bordered table-condensed">
+<thead>
+<tr>
+<th id="Transactions_c0">Date</th>
+<th id="Transactions_c1">Address/batch/amount</th>
+<th id="Transactions_c2">Confirmations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3" class="empty"><span class="empty">no unconfirmed transactions yet</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="monero" class="tab-pane fade">
+<div class="card">
+<div class="card-body">
+<h4>Please send your payment of LTC to Litecoin address:</h4>
+<b><span style="color:gren;font-size:20px">Notice: Every time, when you want to Topup, please, check address on this page. It will be changed every time after each transaction.</span></b><br><br><b>Exchange fee is 3%. You need to 2 confirmations of transaction in the system to deposit money to your account.</b><br><br>
+<div class="alert alert-success">
+<div style="word-break:break-all;font-size:2rem">ltc1qez8tpjqtddeerk2yvaj255mn0fyyhrqscts5zt</div>
+</div>
+<div class="row">
+<div class="col-md-9" style="color:#FFF">
+Payments from Litecoin takes about 5-10 mins.<br><br>To fill up your shop balance with LTC payment you need to:<br><br>1- Send coins to your address shown above (you can send as many separate payments as you want - they all will be added to your balance)<br>2- After your transaction(s) get 2 confirmations - your balance will be added to your account automatically.<br><br>
+</div>
+<div class="col-md-3">
+<div class="pull-right" id="qr-bitcoin" style="width:200px;height:200px;border:1px solid #CCC;position:relative"><img id="qr-code-bitcoin" style="width:100%" src="/storage/emulated/0/Download/ltcc.png"></div>
+</div>
+</div>
+<div class="alert">
+Transactions waiting confirmation:<br>
+<div id="Transactions" class="grid-view">
+<div>
+<div class="table-responsive">
+<table class="items table table-striped table-bordered table-condensed">
+<thead>
+<tr>
+<th id="Transactions_c0">Date</th>
+<th id="Transactions_c1">Address/batch/amount</th>
+<th id="Transactions_c2">Confirmations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3" class="empty"><span class="empty">no unconfirmed transactions yet</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="height:100px"></div>
+</div>
+<script>function myNotify(e,b,d){return d=d?1e3*d:!1,noty({text:e,type:b,dismissQueue:!0,layout:"bottomRight",theme:"default",timeout:d,template:'<div class="noty_message"><span class="noty_text"><div class="noty_close"></script></div></div>',animation:{open:{height:"toggle"},close:{height:"toggle"},easing:"swing",speed:0}})}function confirmAction(e){return noty({text:e,type:"confirm",dismissQueue:!0,layout:"center",theme:"default",timeout:0,template:'<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',buttons:[{addClass:"btn btn-primary",text:"Ok",onClick:function(e){return!0}},{addClass:"btn btn-danger",text:"Cancel",onClick:function(e){return!1}}]})}var ajaxNoty,ajaxError="Error while processing your request.";<script type="text/javascript" src="js/gridview-jquery.yiigridview.js"></script><script type="text/javascript">$(".billing_point").addClass("red"),jQuery(function(e){jQuery("#Transactions").yiiGridView({ajaxUpdate:!1,ajaxVar:"ajax",pagerClass:"pagination",loadingClass:"grid-view-loading",filterClass:"filters",tableClass:"items table table-striped table-bordered table-condensed",selectableRows:1,enableHistory:!1,updateSelector:"{page}, {sort}",filterSelector:"{filter}",pageVar:"Transactions_page"}),jQuery("#yw5").tab("show")});</script>
+</div></body>
+</html>
